@@ -5,27 +5,27 @@ function destructivelyAppendKitten(name) {
  return kittens.push(name)
 }
 
-destructivelyPrependKitten = function (name) {
+function destructivelyPrependKitten  (name) {
   return kittens.unshift(name)
 }
 
-destructivelyRemoveFirstKitten = function() {
+function destructivelyRemoveFirstKitten () {
   return kittens.shift()
 }
 
-destructivelyRemoveLastKitten=function(){
+function destructivelyRemoveLastKitten(){
   return kittens.pop()
 }
-appendKitten = function(name){
+function appendKitten(name){
   var one = kittens.push(name)
   return one
 }
-prependKitten = function(name){
+function prependKitten(name){
   var two = kittens.unshift(name)
   return two
 }
 
-removeLastKitten = function(){
+removeLastKitten(){
   var three = kittens.pop()
   return three
 }
