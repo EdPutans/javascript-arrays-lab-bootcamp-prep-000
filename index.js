@@ -17,11 +17,11 @@ function destructivelyRemoveLastKitten(){
   return kittens.pop()
 }
 function appendKitten(name){
-  var kittens = kittens.push(name)
+  var kittens = [...kittens, name]
   return one
 }
 function prependKitten(name){
-  var two = kittens.unshift(name)
+  var two = [name, ...kittens]
   return two
 }
 
